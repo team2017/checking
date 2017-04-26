@@ -1,27 +1,27 @@
 <template>
     <div class="home">
-        <p v-text="msg"></p>
+        <v-head>
+            <div class="left" slot='HL'>
+                <img src="../assets/2-back.png">
+                <!--<p>返回</p>-->
+            </div>
+            <div class="mid" slot='HM'>
+                <p>我这里是标题党</p>
+            </div>
+            <div class="right" slot='HR'>
+                <img src="../assets/05-home.png">
+                <!--<p>首页</p>-->
+            </div>
+        </v-head>
     </div>
 </template>
 <style class="less" scoped>
-    .home{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        line-height: 5rem;
-        font-size: 0.5rem;
-    }
+
 </style>
 <script>
+    import vHead from '../components/vHead.vue'
     export default{
-        name: 'home',
-        data(){
-            return{
-                msg:'慕思消费者服务系统'
-            }
-        }
+        name: 'Home',
+        components: { vHead }
     }
 </script>
