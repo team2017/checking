@@ -10,7 +10,7 @@
         position: relative;
         width: 100%;
         height: 1.2rem;
-        background: #aaa;
+        background: #666;
         .left,.right {
             position: absolute;
             top: 0;
